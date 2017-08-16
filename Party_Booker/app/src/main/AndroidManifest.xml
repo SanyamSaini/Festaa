@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.a.party_booker">
+
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CALL_LOG" />
+    <uses-permission android:name="android.permission.READ_CALL_LOG" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name=".PartyBooker"
+        android:allowBackup="true"
+        android:icon="@drawable/newpartyicon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:largeHeap="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".FlashScreen"
+            android:theme="@style/NoActionBar"
+            android:screenOrientation="portrait"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Register"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".Login"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".SelectCity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar" />
+        <!-- <activity android:name=".Main_Fragment" -->
+        <!-- /> -->
+        <!-- <activity android:name=".PartyPlotList" /> -->
+        <activity android:name=".UserProfile" />
+        <activity android:name=".NewsFeed" />
+        <activity android:name=".Venues" />
+        <activity
+            android:name=".MainFragment"
+            android:label="@string/title_activity_main_fragment"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait"
+
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".DescriptionActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity android:name=".FeedBack" />
+        <activity
+            android:name=".RatingActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBarForCalenderPage" />
+        <activity
+            android:name=".BookingActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBarForCalenderPage" />
+        <activity android:name=".SearchActivity"
+            android:theme="@style/NoActionBarForCalenderPage"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".HistroyActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBarForCalenderPage"
+            ></activity>
+    </application>
+
+</manifest>

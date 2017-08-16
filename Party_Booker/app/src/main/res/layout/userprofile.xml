@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_change_password"
+    android:layout_width="match_parent"
+    android:background="#fff"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <!--<android.support.v7.widget.Toolbar android:id="@+id/toolbar"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:background="@color/colorPrimary"-->
+        <!--app:titleTextColor="#ffffff"-->
+        <!--app:subtitleTextColor="@android:color/darker_gray"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:minHeight="?attr/actionBarSize"-->
+        <!--android:theme="@style/NoActionBar"-->
+        <!--xmlns:android="http://schemas.android.com/apk/res/android"-->
+        <!--xmlns:app="http://schemas.android.com/apk/res-auto">-->
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:textSize="20sp"-->
+            <!--android:padding="5dp"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:textColor="#ffffff"-->
+            <!--android:text="Employee Profile"/>-->
+
+        <!--<RelativeLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginRight="5dp">-->
+
+        <!--</RelativeLayout>-->
+
+    <!--</android.support.v7.widget.Toolbar>-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:focusableInTouchMode="true"
+                    android:id="@+id/layout_changepassword"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/text_update"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="Basic Details"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="3dp"
+                        android:layout_margin="1dp"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:orientation="horizontal"
+                            android:layout_weight="1"
+                            android:layout_gravity="center_vertical"
+                            >
+
+                            <ImageView
+                                android:layout_gravity="center_vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:src="@drawable/user_type"
+                                android:layout_weight="7"
+                                />
+
+                            <TextView
+
+                                android:id="@+id/txtUserType"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="Urvi Suthar"
+                                android:gravity="start|center_vertical"
+                                android:layout_weight="1"
+                                android:layout_gravity="start"
+                                android:textSize="14sp"
+                                android:layout_marginLeft="5dp"
+                                />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@drawable/line"/>
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="3dp"
+                        android:layout_margin="1dp"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:orientation="horizontal"
+                            android:layout_weight="1"
+                            android:layout_gravity="center_vertical"
+                            >
+
+                            <ImageView
+                                android:layout_gravity="center_vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:src="@drawable/message_filled_100"
+                                android:layout_weight="7"
+                                />
+
+                            <TextView
+
+                                android:id="@+id/txtEmail"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="Urvi Suthar"
+                                android:gravity="start|center_vertical"
+                                android:layout_weight="1"
+                                android:layout_gravity="start"
+                                android:textSize="14sp"
+                                android:layout_marginLeft="5dp"
+                                />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@drawable/line"/>
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="3dp"
+                        android:layout_margin="1dp"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:orientation="horizontal"
+                            android:layout_weight="1"
+                            android:layout_gravity="center_vertical"
+                            >
+
+                            <ImageView
+                                android:layout_gravity="center_vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:src="@drawable/telephone"
+                                android:layout_weight="7"
+                                />
+
+                            <TextView
+
+                                android:id="@+id/txtMobile"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="Urvi Suthar"
+                                android:gravity="start|center_vertical"
+                                android:layout_weight="1"
+                                android:layout_gravity="start"
+                                android:textSize="14sp"
+                                android:layout_marginLeft="5dp"
+                                />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+
+                    <!--<View-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="1dp"-->
+                        <!--android:background="@drawable/line"/>-->
+                    <!--<LinearLayout-->
+                        <!--android:orientation="horizontal"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_marginTop="3dp"-->
+                        <!--android:layout_margin="1dp"-->
+                        <!--android:layout_height="wrap_content">-->
+
+                        <!--<LinearLayout-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="40dp"-->
+                            <!--android:orientation="horizontal"-->
+                            <!--android:layout_weight="1"-->
+                            <!--android:layout_gravity="center_vertical"-->
+                            <!--&gt;-->
+
+                            <!--<ImageView-->
+                                <!--android:layout_gravity="center_vertical"-->
+                                <!--android:layout_width="match_parent"-->
+                                <!--android:layout_height="30dp"-->
+                                <!--android:src="@drawable/earth"-->
+                                <!--android:layout_weight="7"-->
+                                <!--/>-->
+
+                            <!--<TextView-->
+
+                                <!--android:id="@+id/txtCountry"-->
+                                <!--android:layout_width="match_parent"-->
+                                <!--android:layout_height="match_parent"-->
+                                <!--android:text="Urvi Suthar"-->
+                                <!--android:gravity="start|center_vertical"-->
+                                <!--android:layout_weight="1"-->
+                                <!--android:layout_gravity="start"-->
+                                <!--android:textSize="14sp"-->
+                                <!--android:layout_marginLeft="5dp"-->
+                                <!--/>-->
+
+                        <!--</LinearLayout>-->
+
+
+                    <!--</LinearLayout>-->
+                    <!--<View-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="1dp"-->
+                        <!--android:background="@drawable/line"/>-->
+                    <!--<LinearLayout-->
+                        <!--android:orientation="horizontal"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_marginTop="3dp"-->
+                        <!--android:layout_margin="1dp"-->
+                        <!--android:layout_height="wrap_content">-->
+
+                        <!--<LinearLayout-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="40dp"-->
+                            <!--android:orientation="horizontal"-->
+                            <!--android:layout_weight="1"-->
+                            <!--android:layout_gravity="center_vertical"-->
+                            <!--&gt;-->
+
+                            <!--<ImageView-->
+                                <!--android:layout_gravity="center_vertical"-->
+                                <!--android:layout_width="match_parent"-->
+                                <!--android:layout_height="30dp"-->
+                                <!--android:src="@drawable/capitol"-->
+                                <!--android:layout_weight="7"-->
+                                <!--/>-->
+
+                            <!--<TextView-->
+
+                                <!--android:id="@+id/txtState"-->
+                                <!--android:layout_width="match_parent"-->
+                                <!--android:layout_height="match_parent"-->
+                                <!--android:text="Urvi Suthar"-->
+                                <!--android:gravity="start|center_vertical"-->
+                                <!--android:layout_weight="1"-->
+                                <!--android:layout_gravity="start"-->
+                                <!--android:textSize="14sp"-->
+                                <!--android:layout_marginLeft="5dp"-->
+                                <!--/>-->
+
+                        <!--</LinearLayout>-->
+
+
+                    <!--</LinearLayout>-->
+
+                    <!--<View-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="1dp"-->
+                        <!--android:background="@drawable/line"/>-->
+                    <!--<LinearLayout-->
+                        <!--android:orientation="horizontal"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_marginTop="3dp"-->
+                        <!--android:layout_margin="1dp"-->
+                        <!--android:layout_height="wrap_content">-->
+
+                        <!--<LinearLayout-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="40dp"-->
+                            <!--android:orientation="horizontal"-->
+                            <!--android:layout_weight="1"-->
+                            <!--android:layout_gravity="center_vertical"-->
+                            <!--&gt;-->
+
+                            <!--<ImageView-->
+                                <!--android:layout_gravity="center_vertical"-->
+                                <!--android:layout_width="match_parent"-->
+                                <!--android:layout_height="30dp"-->
+                                <!--android:src="@drawable/city_buildings_silhouette"-->
+                                <!--android:layout_weight="7"-->
+                                <!--/>-->
+
+                            <!--<TextView-->
+
+                                <!--android:id="@+id/txtCity"-->
+                                <!--android:layout_width="match_parent"-->
+                                <!--android:layout_height="match_parent"-->
+                                <!--android:text="Urvi Suthar"-->
+                                <!--android:gravity="start|center_vertical"-->
+                                <!--android:layout_weight="1"-->
+                                <!--android:layout_gravity="start"-->
+                                <!--android:textSize="14sp"-->
+                                <!--android:layout_marginLeft="5dp"-->
+                                <!--/>-->
+
+                        <!--</LinearLayout>-->
+
+
+                    <!--</LinearLayout>-->
+
+                    <!--<View-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="1dp"-->
+                        <!--android:background="@drawable/line"/>-->
+                    <!--<LinearLayout-->
+                        <!--android:orientation="horizontal"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_marginTop="3dp"-->
+                        <!--android:layout_margin="1dp"-->
+                        <!--android:layout_height="wrap_content">-->
+
+                        <!--<LinearLayout-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="40dp"-->
+                            <!--android:orientation="horizontal"-->
+                            <!--android:layout_weight="1"-->
+                            <!--android:layout_gravity="center_vertical"-->
+                            <!--&gt;-->
+
+                            <!--<ImageView-->
+                                <!--android:layout_gravity="center_vertical"-->
+                                <!--android:layout_width="match_parent"-->
+                                <!--android:layout_height="30dp"-->
+                                <!--android:src="@drawable/location_pointer"-->
+                                <!--android:layout_weight="7"-->
+                                <!--/>-->
+
+                            <!--<TextView-->
+
+                                <!--android:id="@+id/txtArea"-->
+                                <!--android:layout_width="match_parent"-->
+                                <!--android:layout_height="match_parent"-->
+                                <!--android:text="Urvi Suthar"-->
+                                <!--android:gravity="start|center_vertical"-->
+                                <!--android:layout_weight="1"-->
+                                <!--android:layout_gravity="start"-->
+                                <!--android:textSize="14sp"-->
+                                <!--android:layout_marginLeft="5dp"-->
+                                <!--/>-->
+
+                        <!--</LinearLayout>-->
+
+
+                    <!--</LinearLayout>-->
+
+                    <!--<View-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="1dp"-->
+                        <!--android:background="@drawable/line"/>-->
+                    <!--<LinearLayout-->
+                        <!--android:orientation="horizontal"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_marginTop="3dp"-->
+                        <!--android:layout_margin="1dp"-->
+                        <!--android:layout_height="wrap_content">-->
+
+                        <!--<LinearLayout-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="40dp"-->
+                            <!--android:orientation="horizontal"-->
+                            <!--android:layout_weight="1"-->
+                            <!--android:layout_gravity="center_vertical"-->
+                            <!--&gt;-->
+
+                            <!--<ImageView-->
+                                <!--android:layout_gravity="center_vertical"-->
+                                <!--android:layout_width="match_parent"-->
+                                <!--android:layout_height="30dp"-->
+                                <!--android:src="@drawable/location_cursor"-->
+                                <!--android:layout_weight="7"-->
+                                <!--android:id="@+id/imageView2" />-->
+
+                            <!--<TextView-->
+
+                                <!--android:id="@+id/txtAddress"-->
+                                <!--android:layout_width="match_parent"-->
+                                <!--android:layout_height="match_parent"-->
+                                <!--android:text="Urvi Suthar"-->
+                                <!--android:gravity="start|center_vertical"-->
+                                <!--android:layout_weight="1"-->
+                                <!--android:layout_gravity="start"-->
+                                <!--android:textSize="14sp"-->
+                                <!--android:layout_marginLeft="5dp"-->
+                                <!--/>-->
+
+                        <!--</LinearLayout>-->
+
+
+                    <!--</LinearLayout>-->
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</LinearLayout>

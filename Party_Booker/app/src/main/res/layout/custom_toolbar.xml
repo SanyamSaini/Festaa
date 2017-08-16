@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@color/colorPrimary">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!--<LinearLayout-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:layout_marginLeft="-20dp"-->
+            <!--android:gravity="end">-->
+            <!--<ImageView-->
+            <!--android:layout_width="50dp"-->
+            <!--android:layout_height="50dp"-->
+            <!--android:layout_marginRight="5dp"-->
+            <!--android:padding="5dp"-->
+            <!--android:id="@+id/logout"-->
+            <!--android:visibility="visible"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:src="@drawable/small_icon"/>-->
+
+        <!--</LinearLayout>-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:paddingLeft="-10dp"
+            android:gravity="center">
+            <ImageView
+                android:id="@+id/ecofms"
+                android:layout_width="30dp"
+                android:layout_height="28dp"
+                android:layout_marginRight="5dp"
+                android:layout_gravity="center"
+                    android:src="@drawable/partyimage"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="17dp"
+                android:textColor="@color/white"
+                android:text="Party Booker"
+                android:textStyle="bold"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="end">
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="5dp"
+                android:padding="5dp"
+                android:id="@+id/search"
+                android:visibility="visible"
+                android:layout_gravity="center"
+                android:src="@drawable/search"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.v7.widget.Toolbar>

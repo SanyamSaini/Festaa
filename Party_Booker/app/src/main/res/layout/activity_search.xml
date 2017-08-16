@@ -1,0 +1,112 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#efefef"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        android:padding="5dp"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <!--<LinearLayout-->
+        <!--android:layout_width=""-->
+        <!--android:layout_height=""></LinearLayout>-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/dialog_text_border"
+            >
+            <EditText
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:inputType="textCapSentences"
+                android:paddingLeft="2dp"
+                android:imeOptions="actionNext"
+                android:minLines="4"
+                android:lines="4"
+                android:hint="Search..."
+                android:id="@+id/edit_search"
+                android:singleLine="true"
+                android:textColor="@color/TextColor"
+                android:layout_gravity="center"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:padding="3dp"
+                android:src="@drawable/search_grey"
+                android:layout_weight="6"
+                android:id="@+id/img_search"
+                />
+
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/layout_listview"
+                android:orientation="vertical">
+
+                <ListView
+                    android:background="#fff"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/listview_venues"
+                    android:nestedScrollingEnabled="true"
+                    android:visibility="visible">
+
+                </ListView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:id="@+id/noenquirylayout"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon_noresult"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="10dp"
+                    android:id="@+id/img_notfound"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No Venues Found !"
+                    android:textSize="14sp"
+                    />
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

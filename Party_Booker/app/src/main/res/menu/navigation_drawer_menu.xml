@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!--<item android:title="Home"-->
+        <!--android:icon="@drawable/logout"-->
+        <!--android:id="@+id/home"-->
+        <!--/>-->
+    <item
+        android:id="@+id/login"
+        android:icon="@drawable/logout"
+        android:title="Login" />
+
+    <!--<item android:title="Profile"-->
+        <!--android:id="@+id/profile"-->
+        <!--android:icon="@drawable/logout"-->
+        <!--/>-->
+
+    <!--<item android:title="Catelogs"-->
+        <!--android:id="@+id/catelog"-->
+        <!--android:icon="@drawable/logout"-->
+        <!--/>-->
+
+    <item android:title="Histroy"
+        android:id="@+id/histroy"
+        android:icon="@drawable/histroy"
+        />
+    <item android:title="Contact Us"
+        android:id="@+id/contactus"
+        android:icon="@drawable/nemail"
+        />
+    <item android:title="About Us"
+        android:id="@+id/aboutus"
+        android:icon="@drawable/nabout"
+        />
+    <item android:title="Share"
+        android:id="@+id/shares"
+        android:icon="@drawable/nshare"
+        />
+
+    <item
+        android:id="@+id/logout"
+        android:icon="@drawable/nlogout"
+        android:visible="false"
+        android:title="Logout" />
+</menu>
+
+    <!--android:icon="@drawable/newp"-->

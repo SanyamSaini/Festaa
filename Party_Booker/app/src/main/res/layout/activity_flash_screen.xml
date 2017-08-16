@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_flash_screen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:weightSum="3"
+    android:orientation="vertical"
+    android:background="@drawable/splashscreen"
+    tools:context="com.example.a.party_booker.FlashScreen">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:id="@+id/splashscreen"
+            android:layout_width="500px"
+            android:layout_height="500px"
+            android:layout_gravity="center"
+                android:layout_margin="65dp"/>
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+</LinearLayout>
+
+    </LinearLayout>

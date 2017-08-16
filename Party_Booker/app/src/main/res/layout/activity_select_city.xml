@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_select_city"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/image1"
+    android:gravity="center"
+    tools:context="com.example.a.party_booker.SelectCity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="top"
+        android:gravity="top"
+        android:layout_weight="2"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CITY AND AREA"
+            android:textColor="#ffffff"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#fff"
+            android:backgroundTint="#22ffffff"
+
+            />
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="15dp"
+            android:layout_gravity="center"
+            >
+
+            <Spinner
+                android:layout_weight="1"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:background="@drawable/spinner_layout_city"
+                android:hint="Select City"
+                android:paddingLeft="10dp"
+                android:id="@+id/city"
+                android:gravity="center_vertical"
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="5dp"
+
+            android:layout_gravity="center"
+            >
+
+            <Spinner
+                android:layout_weight="1"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:background="@drawable/spinner_layout_city"
+                android:hint="Select Area"
+                android:paddingLeft="10dp"
+                android:id="@+id/area"
+                android:gravity="center_vertical"
+                />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="5dp"
+            >
+
+            <Button
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:text="SUBMIT"
+                android:background="@drawable/login_layout"
+                android:textSize="14sp"
+                android:textColor="#fff"
+                android:id="@+id/submit"
+                android:visibility="visible"
+                android:gravity="center"
+                />
+            <!--android:background="@drawable/submit_button_layout"-->
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

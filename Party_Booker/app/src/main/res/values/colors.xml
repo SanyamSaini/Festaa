@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#5E2179</color>
+    <color name="colorPrimaryDark">#4d096b</color>
+    <color name="colorAccent">#FFFFFF</color>
+    <color name="white">#fff</color>
+    <color name="tintprimary">#885E2179</color>
+    <color name="pink">#901058</color>
+    <color name="tintpink">#99901058</color>
+    <color name="TextColor">#757575</color>
+    <color name="HintColor">#9E9E9E</color>
+    <color name="darktint">#dd5E2179</color>
+    <color name="colorcontrol">#424242</color>
+</resources>

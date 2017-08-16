@@ -1,0 +1,192 @@
+<LinearLayout android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <android.support.v7.widget.Toolbar android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimary"
+        app:titleTextColor="#ffffff"
+        app:subtitleTextColor="@android:color/darker_gray"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/NoActionBar"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:padding="5dp"
+            android:gravity="center_vertical"
+            android:textColor="#ffffff"
+            android:id="@+id/feedbackform"
+            android:text="Hall Booking"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp">
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter your booking dates*"
+        android:textSize="16sp"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginBottom="8dp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:padding="3dp"
+        android:id="@+id/lv_filter_view"
+        android:orientation="horizontal">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:focusable="false"
+            android:layout_gravity="center"
+            android:background="@drawable/dialog_text_border"
+            android:gravity="center"
+            android:layout_marginRight="2dp"
+            android:id="@+id/ed_fromdate"
+            android:hint="From Date"
+            android:textColor="#666"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:background="@drawable/dialog_text_border"
+            android:layout_marginLeft="2dp"
+            android:gravity="center"
+            android:focusable="false"
+            android:id="@+id/ed_todate"
+            android:hint="To Date"
+            android:textColor="#666"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="25dp"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<TextView
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:text="For what your are booking hall?*"
+android:textSize="16sp"
+android:textColor="@color/colorPrimary"
+android:layout_marginBottom="8dp"
+/>
+
+
+<EditText
+android:padding="5dp"
+android:layout_width="match_parent"
+android:layout_height="40dp"
+android:layout_weight="1"
+android:background="@drawable/dialog_text_border"
+android:inputType="textMultiLine|textCapSentences"
+android:paddingLeft="2dp"
+android:imeOptions="actionNext"
+android:minLines="4"
+android:lines="4"
+android:hint="Booking for..."
+android:id="@+id/edit_bookingfor"
+android:singleLine="true"
+android:textColor="@color/TextColor"
+android:layout_gravity="center"
+android:textSize="16sp" />
+
+
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="25dp"
+        android:layout_height="wrap_content"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Your Address*"
+            android:textSize="16sp"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginBottom="8dp"
+            />
+
+
+        <EditText
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/dialog_text_border"
+            android:inputType="textMultiLine|textCapSentences"
+            android:paddingLeft="2dp"
+            android:imeOptions="actionNext"
+            android:minLines="4"
+            android:lines="4"
+            android:hint="Address"
+            android:id="@+id/edit_address"
+            android:singleLine="true"
+            android:textColor="@color/TextColor"
+            android:layout_gravity="center"
+            android:textSize="16sp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:background="@drawable/feedback_button"
+            android:id="@+id/btn_booknow"
+            android:layout_height="40dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="Book Now"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

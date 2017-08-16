@@ -1,0 +1,138 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <android.support.v7.widget.Toolbar android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimary"
+        app:titleTextColor="#ffffff"
+        app:subtitleTextColor="@android:color/darker_gray"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/NoActionBar"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:padding="5dp"
+            android:gravity="center_vertical"
+            android:textColor="#ffffff"
+            android:id="@+id/feedbackform"
+            android:text="Booking Histroy"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp">
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#efefef"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        android:padding="5dp"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:background="@drawable/dialog_text_border"-->
+            <!--&gt;-->
+            <!--<EditText-->
+                <!--android:padding="5dp"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="40dp"-->
+                <!--android:layout_weight="1"-->
+                <!--android:inputType="textCapSentences"-->
+                <!--android:paddingLeft="2dp"-->
+                <!--android:imeOptions="actionNext"-->
+                <!--android:minLines="4"-->
+                <!--android:lines="4"-->
+                <!--android:hint="Search..."-->
+                <!--android:id="@+id/edit_search"-->
+                <!--android:singleLine="true"-->
+                <!--android:textColor="@color/TextColor"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:textSize="16sp" />-->
+
+            <!--<ImageView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="40dp"-->
+                <!--android:padding="3dp"-->
+                <!--android:src="@drawable/search_grey"-->
+                <!--android:layout_weight="6"-->
+                <!--android:id="@+id/img_search"-->
+                <!--/>-->
+
+
+        <!--</LinearLayout>-->
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/layout_listview"
+                android:orientation="vertical">
+
+                <ListView
+                    android:background="#fff"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/listview_histroy"
+                    android:nestedScrollingEnabled="true"
+                    android:visibility="visible">
+                </ListView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:id="@+id/noenquirylayout"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon_noresult"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="10dp"
+                    android:id="@+id/img_notfound"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No Histroy Found !"
+                    android:textSize="14sp"
+                    />
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
